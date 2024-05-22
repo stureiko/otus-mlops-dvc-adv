@@ -53,6 +53,8 @@ from tensorflow.keras.callbacks import CSVLogger
 from tqdm.keras import TqdmCallback
 from dvclive import Live
 from dvclive.keras import DVCLiveCallback
+import warnings
+warnings.filterwarnings("ignore")
 
 
 # disable tensorflow warnings
@@ -143,6 +145,9 @@ def train_top_model():
         desc="This is a Computer Vision (CV) model that's segmenting out swimming pools from satellite images.",
         labels=["cv", "segmentation", "satellite-images"])
 
+        test_loss, test_acc = model.evaluate(validation_data, validation_labels)
+        live.log_metric("test_loss", test_loss)
+        live.log_metric("test_acc", test_acc)
 
 
 def main():
