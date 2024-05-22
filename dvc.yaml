@@ -9,3 +9,14 @@ stages:
     metrics:
     - metrics.csv:
         cache: false
+  train_live:
+    cmd: python train_live.py
+    deps:
+    - data
+    - train_live.py
+    outs:
+    - model_live.weights.h5
+    - mymodel_live.h5
+    metrics:
+    - metrics_live.csv:
+        cache: false

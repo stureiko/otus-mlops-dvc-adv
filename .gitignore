@@ -2,3 +2,5 @@ venv/
 
 /data
 /model.weights.h5
+/mymodel_live.h5
+/model_live.weights.h5
