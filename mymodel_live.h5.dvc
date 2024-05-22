@@ -1,5 +1,0 @@
-outs:
-- md5: 3abd259c2070e5db515c87b524ed28f2
-  size: 17147400
-  hash: md5
-  path: mymodel_live.h5

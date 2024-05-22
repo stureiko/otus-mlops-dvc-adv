@@ -31,18 +31,18 @@ stages:
       nfiles: 2800
     - path: train_live.py
       hash: md5
-      md5: dd4a36d590c9b6eb17929a5021e42a6a
-      size: 4724
+      md5: 75e1c222c72215759707cf96079f3e65
+      size: 5179
     outs:
     - path: metrics_live.csv
       hash: md5
-      md5: aeee41f958e7f33deb06f8c9af801ea2
-      size: 844
+      md5: 42c8b63fe11605facdc729fb03702562
+      size: 839
     - path: model_live.weights.h5
       hash: md5
-      md5: 6f157ab0c49874e7ca405099ba7222e0
+      md5: 567848e14b81894d9bc32992d980e969
       size: 17136904
     - path: mymodel_live.h5
       hash: md5
-      md5: 6d006ffe421128eb2c895d985000ce47
+      md5: 5d9f80783361e1f4349c667f01fda062
       size: 17147400
