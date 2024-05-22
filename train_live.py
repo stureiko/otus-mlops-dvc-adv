@@ -136,7 +136,12 @@ def train_top_model():
                 callbacks=[TqdmCallback(), CSVLogger("metrics_live.csv"), DVCLiveCallback(live=live)])
         model.save_weights(top_model_weights_path)
         model.save("mymodel_live.h5")
-        live.log_artifact("mymodel_live.h5", type="model")
+        # live.log_artifact("mymodel_live.h5", type="model")
+        live.log_artifact(str("mymodel_live.h5"),
+        type="model",
+        name="pool-segmentation",
+        desc="This is a Computer Vision (CV) model that's segmenting out swimming pools from satellite images.",
+        labels=["cv", "segmentation", "satellite-images"])
 
 
 

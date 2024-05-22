@@ -20,3 +20,21 @@ stages:
     metrics:
     - metrics_live.csv:
         cache: false
+metrics:
+- dvclive/metrics.json
+plots:
+- dvclive/plots/metrics:
+    x: step
+artifacts:
+  mymodel_live:
+    path: mymodel_live.h5
+    type: model
+  pool-segmentation:
+    path: mymodel_live.h5
+    type: model
+    desc: This is a Computer Vision (CV) model that's segmenting out swimming pools
+      from satellite images.
+    labels:
+    - cv
+    - segmentation
+    - satellite-images
