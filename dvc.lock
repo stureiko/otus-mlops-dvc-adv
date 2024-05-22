@@ -15,11 +15,11 @@ stages:
     outs:
     - path: metrics.csv
       hash: md5
-      md5: 98d25611eb2ce7d8d121c604214573a0
-      size: 840
+      md5: 36f14c44dd5cc76e8b1956ffa7a0be69
+      size: 825
     - path: model.weights.h5
       hash: md5
-      md5: 46100c23bb70dbfe084304752a9e0666
+      md5: 0f9c92fd07b6adb7cc412a1a3dcdb326
       size: 17136904
   train_live:
     cmd: python train_live.py
