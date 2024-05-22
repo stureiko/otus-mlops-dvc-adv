@@ -1,0 +1,9 @@
+dvc[s3]
+pillow
+scipy
+# tensorflow
+tensorflow-macos
+tqdm
+numpy
+pygit2
+dvclive
